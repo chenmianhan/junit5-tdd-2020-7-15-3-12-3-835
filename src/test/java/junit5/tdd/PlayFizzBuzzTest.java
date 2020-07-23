@@ -16,83 +16,91 @@ public class PlayFizzBuzzTest {
     @BeforeEach
     void initEveryMethod() {
     }
+
     @Test
-    void should_return_1_when_play_fizz_buzz_when_given_1(){
+    void should_return_1_when_play_fizz_buzz_when_given_1() {
         //given
-        FizzBuzz fizzBuzz=new FizzBuzz();
+        FizzBuzz fizzBuzz = new FizzBuzz();
         //when
 
-        String actual=fizzBuzz.play(1);
+        String actual = fizzBuzz.play(1);
         //then
         assertThat(actual, is("1"));
     }
+
     @Test
-    void should_return_fizz_when_play_fizz_buzz_when_given_3(){
+    void should_return_fizz_when_play_fizz_buzz_when_given_3() {
         //given
-        FizzBuzz fizzBuzz=new FizzBuzz();
+        FizzBuzz fizzBuzz = new FizzBuzz();
         //when
 
-        String actual=fizzBuzz.play(3);
+        String actual = fizzBuzz.play(3);
         //then
         assertThat(actual, is("Fizz"));
     }
+
     @Test
-    void should_return_buzz_when_play_fizz_buzz_when_given_5(){
+    void should_return_buzz_when_play_fizz_buzz_when_given_5() {
         //given
-        FizzBuzz fizzBuzz=new FizzBuzz();
+        FizzBuzz fizzBuzz = new FizzBuzz();
         //when
 
-        String actual=fizzBuzz.play(5);
+        String actual = fizzBuzz.play(5);
         //then
         assertThat(actual, is("Buzz"));
     }
+
     @Test
-    void should_return_Whizz_when_play_fizz_buzz_when_given_7(){
+    void should_return_Whizz_when_play_fizz_buzz_when_given_7() {
         //given
-        FizzBuzz fizzBuzz=new FizzBuzz();
+        FizzBuzz fizzBuzz = new FizzBuzz();
         //when
 
-        String actual=fizzBuzz.play(7);
+        String actual = fizzBuzz.play(7);
         //then
         assertThat(actual, is("Whizz"));
     }
+
     @Test
-    void should_return_fizzBuzz_when_play_fizz_buzz_when_given_15(){
+    void should_return_fizzBuzz_when_play_fizz_buzz_when_given_15() {
         //given
-        FizzBuzz fizzBuzz=new FizzBuzz();
+        FizzBuzz fizzBuzz = new FizzBuzz();
         //when
 
-        String actual=fizzBuzz.play(15);
+        String actual = fizzBuzz.play(15);
         //then
         assertThat(actual, is("FizzBuzz"));
     }
+
     @Test
-    void should_return_fizzWhizz_when_play_fizz_buzz_when_given_21(){
+    void should_return_fizzWhizz_when_play_fizz_buzz_when_given_21() {
         //given
-        FizzBuzz fizzBuzz=new FizzBuzz();
+        FizzBuzz fizzBuzz = new FizzBuzz();
         //when
 
-        String actual=fizzBuzz.play(21);
+        String actual = fizzBuzz.play(21);
         //then
         assertThat(actual, is("FizzWhizz"));
     }
+
     @Test
-    void should_return_buzzWhizz_when_play_fizz_buzz_when_given_35(){
+    void should_return_buzzWhizz_when_play_fizz_buzz_when_given_35() {
         //given
-        FizzBuzz fizzBuzz=new FizzBuzz();
+        FizzBuzz fizzBuzz = new FizzBuzz();
         //when
 
-        String actual=fizzBuzz.play(35);
+        String actual = fizzBuzz.play(35);
         //then
         assertThat(actual, is("BuzzWhizz"));
     }
+
     @Test
-    void should_return_fizzBuzzWhizz_when_play_fizz_buzz_when_given_105(){
+    void should_return_fizzBuzzWhizz_when_play_fizz_buzz_when_given_105() {
         //given
-        FizzBuzz fizzBuzz=new FizzBuzz();
+        FizzBuzz fizzBuzz = new FizzBuzz();
         //when
 
-        String actual=fizzBuzz.play(105);
+        String actual = fizzBuzz.play(105);
         //then
         assertThat(actual, is("FizzBuzzWhizz"));
     }
