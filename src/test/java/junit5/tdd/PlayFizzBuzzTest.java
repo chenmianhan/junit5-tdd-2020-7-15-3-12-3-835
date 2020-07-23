@@ -26,5 +26,25 @@ public class PlayFizzBuzzTest {
         //then
         assertThat(actual, is("1"));
     }
+    @Test
+    void should_return_fizz_when_play_fizz_buzz_when_given_3(){
+        //given
+        FizzBuzz fizzBuzz=new FizzBuzz();
+        //when
+
+        String actual=fizzBuzz.play(3);
+        //then
+        assertThat(actual, is("fizz"));
+    }
+    @Test
+    void should_return_buzz_when_play_fizz_buzz_when_given_5(){
+        //given
+        FizzBuzz fizzBuzz=new FizzBuzz();
+        //when
+
+        String actual=fizzBuzz.play(5);
+        //then
+        assertThat(actual, is("Buzz"));
+    }
 
 }
