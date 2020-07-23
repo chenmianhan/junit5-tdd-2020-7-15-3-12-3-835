@@ -34,7 +34,7 @@ public class PlayFizzBuzzTest {
 
         String actual=fizzBuzz.play(3);
         //then
-        assertThat(actual, is("fizz"));
+        assertThat(actual, is("Fizz"));
     }
     @Test
     void should_return_buzz_when_play_fizz_buzz_when_given_5(){
@@ -46,5 +46,7 @@ public class PlayFizzBuzzTest {
         //then
         assertThat(actual, is("Buzz"));
     }
+
+
 
 }
