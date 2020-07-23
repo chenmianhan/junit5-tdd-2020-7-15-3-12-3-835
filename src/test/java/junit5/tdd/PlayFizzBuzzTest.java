@@ -24,7 +24,6 @@ public class PlayFizzBuzzTest {
 
         String actual=fizzBuzz.play(1);
         //then
-
         assertThat(actual, is("1"));
     }
 }
