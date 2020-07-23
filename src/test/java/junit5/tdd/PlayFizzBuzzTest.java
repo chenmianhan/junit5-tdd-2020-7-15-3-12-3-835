@@ -76,4 +76,5 @@ public class PlayFizzBuzzTest {
         //then
         assertThat(actual, is("FizzWhizz"));
     }
+
 }
